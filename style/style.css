@@ -60,14 +60,14 @@ h4 {
     margin-top: 100px;
 }
 
-.school-body {
+/* .school-body {
     position: relative;
     padding: 0 100px;
-}
+} */
 
 .school-points {
     position: absolute;
-    left: 0;
+    left: 45px;
     top: 1147px;
 }
 
@@ -152,11 +152,24 @@ h4 {
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-New
+/* New */
 
 .school-new {
     width: 100%;
-    padding: 70px 40px
+    padding: 70px 40px;
+    position: relative;
+}
+
+.school-news-point {
+    position: absolute;
+    top: 415px;
+    right: 30px;
+}
+
+.school-news-point i {
+    color: #109106;
+    font-size: 25px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .school-new-header {
@@ -258,6 +271,20 @@ New
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
+    position: relative;
+}
+
+.school-point-out {
+    position: absolute;
+    left: 0;
+    top: 67px;
+    transform: translateX(-65px);
+}
+
+.school-point-out i {
+    color: #109106;
+    font-size: 25px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .school-education-info h1 {
@@ -366,6 +393,7 @@ New
 /* Cooperate */
 .school-cooperate {
     margin-top: 80px;
+    
 }
 
 .school-cooperates-detail {
@@ -388,13 +416,15 @@ New
 }
 
 .school-cooperates-detail {
-    transform: translateX(-150px);
+    /* transform: translateX(-75px); */
     display: flex;
     margin-top: 80px;
 }
 
 .school-cooperates {
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .school-cooperates-image-container {
@@ -455,9 +485,97 @@ New
     color: red;
 }
 
-.wave {
-    width: 100%; /* Chiều rộng của wave */
-    height: 400px; /* Chiều cao của wave */
-    background-image: linear-gradient(to bottom, green, lightgreen); /* Gradient từ màu xanh lá đậm sang nhạt */
-    clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%); /* Tạo hình dạng sóng */
+.school-cooperate-header p {
+    margin-top: 15px;
+    font-weight: lighter;
+}
+
+.school-cooperates-page {
+    width: 100%;
+    text-align: right;
+    margin-top: 20px;
+}
+
+.school-cooperates-page i {
+    font-size: 20px;
+    color: #1daf03;
+}
+
+/* Sharing */
+.school-sharing-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.school-sharing-info {
+    text-align: right;
+}
+
+.school-sharing-info h1 {
+    font-weight: bolder;
+}
+
+.school-sharing-info p {
+    margin-top: 15px;
+    font-weight: lighter;
+}
+
+.school-sharings {
+    width: auto;
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.school-sharings-people {
+    width: 30%;
+    position: relative;
+    height: 100%;
+    border: 1px solid white;
+    border-radius : 4px 40px 4px 40px;
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    margin-right: 30px;
+}
+
+.school-sharings-avatar {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: 40px;
+}
+
+.school-sharings-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.school-sharings-detail {
+    padding: 80px 20px 20px 20px;
+}
+
+.school-sharings-detail h5 {
+    font-weight: bolder;
+}
+
+.school-sharings-detail p {
+    font-weight: lighter;
+    margin-top: 25px;
+    line-height: 27px;
+}
+
+.school-sharings-footer {
+    padding: 0px 0px 20px 20px;
+}
+
+.school-sharings-footer span {
+    font-weight: 400;
+}
+
+.school-sharings {
+    display: flex;
 }
