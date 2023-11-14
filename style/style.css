@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar--school {
+    margin-top: 20px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+h4 {
+    margin-bottom: unset;
+}
+
+.navbar-school {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-info {
+    margin-left: 10px;
+}
+
+.navbar-info p {
+    font-size: 13px;
+}
+
+.navbar-school-menu {
+    display: flex;
+}
+
+.navbar-school-menu p {
+    padding: 10px;
+    font-size: 15px;
+}
+
+.navbar-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-search {
+    font-size: 20px;
+}
+
+.header-intro {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.school-body {
+    position: relative;
+    padding: 0 100px;
+}
+
+.school-points {
+    position: absolute;
+    left: 0;
+    top: 1147px;
+}
+
+.school-points i {
+    color: #109106;
+    font-size: 25px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.school-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px
+}
+
+.school-info-1 {
+    width: 250px;
+    height: 200px;
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-top: 40px;
+    border: 1px solid white;
+    border-radius: 0px 40px; 
+}
+
+.school-info-2 {
+    width: 250px;
+    height: 200px;
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 20px;
+    border: 1px solid white;
+    border-radius: 0px 40px;
+}
+
+.school-info-icon {
+    margin-left: 10px;
+}
+
+.school-info-icon i {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.8rem;
+    height: 3.8rem;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    font-size: 2rem;
+    color: #bc5b5b;
+    margin: -0.2rem 0.5rem 1.0rem 0;
+    transition: 0.5s ease;
+}
+
+.school-info-number {
+    text-align: center;
+}
+
+.school-info-number h1 {
+    color: #05c13e;
+}
+
+.school-point {
+    width: 50%;
+    text-align: center;
+}
+
+.school-point i {
+    color: #109106;
+    font-size: 25px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+New
+
+.school-new {
+    width: 100%;
+    padding: 70px 40px
+}
+
+.school-new-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.school-new-info {
+    text-align: right;
+}
+
+.school-new-info p {
+    margin-top: 20px;
+}
+
+.school-new-info h1 {
+    font-weight: bolder;
+}
+
+.school-news-image {
+    width: 48%;
+    height: 300px;
+    overflow: hidden;
+    border: 1px solid white;
+    border-radius: 5px 5px 5px 40px;
+}
+
+.school-news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.school-news {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.school-news-content {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+.school-news-content p {
+    line-height: 30px;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+
+.school-news-content h5 {
+    font-weight: bolder;
+}
+
+.school-news-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.school-news-footer p {
+    color: red;
+    font-weight: 600;
+}
+
+.school-news-page {
+    text-align: right;
+}
+
+.school-news-page i{
+    font-size: 20px;
+    color: #1daf03;
+}
+
+.fa-history span {
+    font-weight: 400;
+}
+
+/* Education */
+
+.school-point-education {
+    text-align: center;
+}
+
+.school-point-education i {
+    color: #109106;
+    font-size: 25px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.school-educations {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.school-education-info h1 {
+    font-weight: bolder;
+}
+
+.school-education-info p {
+    margin-top: 20px;
+}
+
+.school-educations-image {
+    width: 48%;
+    height: 200px;
+    overflow: hidden;
+    border: 1px solid white;
+    border-radius: 5px 5px 40px 5px;
+}
+
+.school-educations-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.school-educations-content {
+    width: 50%;
+}
+
+.school-educations-content h5 {
+    font-weight: bolder;
+}
+
+.school-educations-content p {
+    line-height: 30px;
+    font-weight: lighter;
+    margin-top: 20px;
+}
+
+.school-educations-page {
+    text-align: right;
+}
+
+.school-educations-page i{
+    font-size: 20px;
+    color: #1daf03;
+}
+
+/* Research */
+.school-research {
+    margin-top: 100px;
+}
+
+.school-research-header {
+    text-align: right;
+}
+
+.school-research-header p {
+    margin-top: 15px;
+}
+
+.school-researches-detail {
+    padding: 10px;
+    background-color: transparent;
+}
+
+.school-researches {
+    display: flex;
+    justify-content: space-around;
+}
+
+.school-researches-image {
+    width: 350px;
+    height: 250px;
+    border: 1px solid white;
+    border-radius: 5px 40px 5px 40px;
+    overflow: hidden;
+}
+
+.school-researches-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.detail-two {
+    margin-top: 40px;
+}
+
+.school-researches-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.school-researches-info h5 {
+    font-weight: bolder;
+}
+
+.school-researches-info p {
+    font-weight: bolder;
+    color: red;
+}
+
+/* Cooperate */
+.school-cooperate {
+    margin-top: 80px;
+}
+
+.school-cooperates-detail {
+    display: flex;
+}
+
+.school-cooperates-image {
+    width: 200px;
+    height: 250px;
+    border: 1px solid white;
+    border-radius: 5px 40px 5px 40px;
+    overflow: hidden;
+    margin-right: 5px;
+}
+
+.school-cooperates-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.school-cooperates-detail {
+    transform: translateX(-150px);
+    display: flex;
+    margin-top: 80px;
+}
+
+.school-cooperates {
+    display: flex;
+}
+
+.school-cooperates-image-container {
+    position: relative; 
+    height: 500px; 
+    transform: translateY(-90px);
+}
+
+.school-cooperates-image-container img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    opacity: 0.1;
+}
+
+.text-cooperates {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    color: black; 
+    flex-direction: column;
+}   
+
+.text-cooperates h5 {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin-top: 100px;
+}
+
+.text-cooperates p {
+    font-weight: lighter;
+    margin-left: 7px;
+}
+
+.school-cooperates-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.school-cooperates-footer i {
+    margin-left: 7px;
+}
+
+.school-cooperates-footer span {
+    font-weight: 300;
+}
+
+.school-cooperates-footer p {
+    font-weight: bolder;
+    color: red;
+}
+
+.wave {
+    width: 100%; /* Chiều rộng của wave */
+    height: 400px; /* Chiều cao của wave */
+    background-image: linear-gradient(to bottom, green, lightgreen); /* Gradient từ màu xanh lá đậm sang nhạt */
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%); /* Tạo hình dạng sóng */
+}
