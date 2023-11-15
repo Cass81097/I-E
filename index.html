@@ -26,7 +26,7 @@
 
 <body>
     <header class="container-fluid bg-light py-3">
-        <div class="navbar--school container">
+        <div class="navbar--school">
             <div class="navbar-school">
                 <div class="navbar-icon">
                     <img src="./assets/images/Logo.png" alt="">
@@ -38,7 +38,7 @@
             </div>
             <div class="navbar-menu">
                 <div class="navbar-school-menu">
-                    <p>GIỚI THIỆU</p>
+                    <p class="select">GIỚI THIỆU</p>
                     <p>TIN TỨC - SỰ KIỆN</p>
                     <p>ĐÀO TẠO</p>
                     <p>NGHIÊN CỨU KHOA HỌC</p>
@@ -70,7 +70,7 @@
 
             <div class="school-info-2">
                 <div class="school-info-icon">
-                    <i class="fas fa-pizza-slice"></i>
+                    <i class="fas fa-ice-cream"></i>
                 </div>
                 <div class="school-info-number">
                     <h1>1,000+</h1>
@@ -80,7 +80,7 @@
 
             <div class="school-info-1">
                 <div class="school-info-icon">
-                    <i class="fas fa-ice-cream"></i>
+                    <i class="fas fa-cheese"></i>
                 </div>
                 <div class="school-info-number">
                     <h1>100+</h1>
@@ -136,7 +136,8 @@
     </header>
 
     <div class="container my-4">
-        <div class="row" style="background: #f1f6fb">
+        <div class="row">
+
             <div class="school-new">
                 <div class="school-new-header">
                     <div class="school-point">
@@ -144,7 +145,7 @@
                     </div>
 
                     <div class="school-new-info ">
-                        <h1>TIN TỨC - SỰ KIỆN</h1>
+                        <h1 class="news">TIN TỨC - SỰ KIỆN</h1>
                         <p>Tổng hợp tin tức, sự kiện mới nhất của khoa Tiếng Italia</p>
                     </div>
                 </div>
@@ -163,9 +164,14 @@
                             <i class="fas fa-history">
                                 <span class="news-time"></span>
                             </i>
-                            <p>Xem thêm</p>
+                            <button type="button" class="btn btn-success">Xem thêm</button>
                         </div>
                     </div>
+                    
+                    <div class="school-news-point">
+                        <i class="fas fa-circle"></i>
+                    </div>
+
                 </div>
 
                 <div class="school-news-page">
@@ -182,7 +188,7 @@
                         <i class="fas fa-circle"></i>
                     </div>
                     <div class="school-education-info">
-                        <h1>ĐÀO TẠO</h1>
+                        <h1 class="educations">ĐÀO TẠO</h1>
                         <p>Chương trình đào tạo chuẩn đầu ra Ngành Ngôn ngữ Italia</p>
                     </div>
                 </div>
@@ -194,32 +200,35 @@
                     </div>
 
                     <div class="school-educations-content">
-                        <h5>Hệ Chính quy Ngôn ngữ Italia</h5>
-                        <p>Chương trình đào tạo đại học ngành Ngôn ngữ Italia nhằm
-                            đào tạo sinh viên có phẩm chất chính trị vững vàng; có kiến
-                            thức, kỹ năng, thái độ và đạo đức phù hợp để làm việc trong
-                            môi trường đa ngôn ngữ, đa văn hóa và có khả năng thích ứng
-                            cao với những thay đổi nhanh chóng của nền kinh tế đang
-                            trong quá trình hội </p>
+                        <h5 class="educations-title"></h5>
+                        <p class="educations-content"></p>
 
-                        <div class="school-educations-page">
-                            <i class="fas fa-long-arrow-alt-left"></i>
-                            <i class="fas fa-long-arrow-alt-right"></i>
-                        </div>
                     </div>
 
                     <div class="school-educations-image">
-                        <img src="./assets/images/education.png" alt="">
+                        <img class="educations-image" src="" alt="">
                     </div>
-
                 </div>
+                <div class="school-educations-footer">
+                    <button type="button" class="btn btn-success">Xem thêm</button>
+                    <div class="school-educations-page">
+                        <i class="fas fa-long-arrow-alt-left fa-educations-left"></i>
+                        <i class="fas fa-long-arrow-alt-right fa-educations-right"></i>
+                    </div>
+                </div>
+               
             </div>
 
             <!-- Research -->
 
             <div class="school-research">
+
+                <div class="school-research-point">
+                    <i class="fas fa-circle"></i>
+                </div>
+
                 <div class="school-research-header">
-                    <h1>NGHIÊN CỨU KHOA HỌC</h1>
+                    <h1 class="researchs">NGHIÊN CỨU KHOA HỌC</h1>
                     <p>Hoạt động Nghiên cứu Khoa học cho Giảng viên và Sinh viên</p>
                 </div>
 
@@ -230,7 +239,7 @@
                         </div>
                         <div class="school-researches-info">
                             <h5>Nghiên cứu khoa học Giảng viên</h5>
-                            <p>Xem thêm</p>
+                            <button type="button" class="btn btn-success">Xem thêm</button>
                         </div>
                     </div>
 
@@ -240,7 +249,7 @@
                         </div>
                         <div class="school-researches-info">
                             <h5>Nghiên cứu khoa học Sinh viên</h5>
-                            <p>Xem thêm</p>
+                            <button type="button" class="btn btn-success">Xem thêm</button>
                         </div>
                     </div>
                 </div>
@@ -259,7 +268,7 @@
             <!-- Cooperate -->
             <div class="school-cooperate">
                 <div class="school-cooperate-header">
-                    <h1>HỢP TÁC</h1>
+                    <h1 class="cooperates">HỢP TÁC</h1>
                     <p>Hoạt động hợp tác trong và ngoài nước của Khoa Tiếng Italia</p>
                 </div>
 
@@ -285,7 +294,7 @@
                                 <i class="fas fa-history">
                                     <span class="cooperates-time"></span>
                                 </i>
-                                <p>Xem thêm</p>
+                                <button type="button" class="btn btn-success">Xem thêm</button>
                             </div>
                         </div>
                     </div>
@@ -301,75 +310,22 @@
             <!-- Sharing -->
             <div class="school-sharing">
 
+                <div class="school-sharing-point">
+                    <i class="fas fa-circle"></i>
+                </div>
+
                 <div class="school-sharing-header">
                     <div class="school-point" style="text-align: center;">
                         <i class="fas fa-circle"></i>
                     </div>
                     <div class="school-sharing-info">
-                        <h1>CHIA SẺ - TRẢI NGHIỆM</h1>
+                        <h1 class="sharings">CHIA SẺ - TRẢI NGHIỆM</h1>
                         <p>Góc chia sẻ về những trải nghiệm của CBGV, SV Khoa Tiếng Italia</p>
                     </div>
                 </div>
 
                 <div class="school-sharings">
-                    <div class="school-sharings-people">
-                        <div class="school-sharings-avatar">
-                            <img src="./assets/images/person/quynh.jpg" alt="">
-                        </div>
-                        <div class="school-sharings-detail">
-                            <h5>Đam mê quảng bá văn hóa
-                                Việt của nữ du học sinh Ý</h5>
-                            <p>Dung Trần có tình yêu đặc biệt
-                                dành cho Italy. Với cô, Italy là nơi
-                                Dung học tập để mở mang nhận
-                                thức lẫn trái tim . Cô ấn tượng với
-                                các công trình kiến trúc, văn hóa.</p>
-                        </div>
-                        <div class="school-sharings-footer">
-                            <i class="fas fa-history">
-                                <span>01/06/2022</span>
-                            </i>
-                        </div>
-                    </div>
-
-                    <div class="school-sharings-people">
-                        <div class="school-sharings-avatar">
-                            <img src="./assets/images/person/nghia.jpg" alt="">
-                        </div>
-                        <div class="school-sharings-detail">
-                            <h5>Đam mê quảng bá văn hóa
-                                Việt của nam du học sinh Ý</h5>
-                            <p>Nghĩa có tình yêu đặc biệt
-                                dành cho Italy. Với anh, Italy là nơi
-                                Nghĩa học tập để mở mang nhận
-                                thức lẫn trái tim . Anh ấn tượng với
-                                các công trình kiến trúc, văn hóa.</p>
-                        </div>
-                        <div class="school-sharings-footer">
-                            <i class="fas fa-history">
-                                <span>07/03/2022</span>
-                            </i>
-                        </div>
-                    </div>
-
-                    <div class="school-sharings-people">
-                        <div class="school-sharings-avatar">
-                            <img src="./assets/images/person/ha.jpg" alt="">
-                        </div>
-                        <div class="school-sharings-detail">
-                            <h5>Nam du học sinh Việt đẹp trai, đạt điểm gần tuyệt đối</h5>
-                            <p>HA có tình yêu đặc biệt
-                                dành cho Italy. Với anh, Italy là nơi
-                                anh học tập để mở mang nhận
-                                thức lẫn trái tim . Anh ấn tượng với
-                                các công trình kiến trúc, văn hóa.</p>
-                        </div>
-                        <div class="school-sharings-footer">
-                            <i class="fas fa-history">
-                                <span>08/10/2022</span>
-                            </i>
-                        </div>
-                    </div>
+                    <!-- Handle Sharings -->
                 </div>
 
                 <div class="school-sharings-page">
@@ -377,13 +333,21 @@
                     <i class="fas fa-long-arrow-alt-right fa-sharings-right "></i>
                 </div>
 
+                <div class="school-point-education">
+                    <i class="fas fa-circle"></i>
+                </div>
             </div>
 
 
             <!-- Photo -->
             <div class="school-photo">
+
+                <div class="school-photo-point">
+                    <i class="fas fa-circle"></i>
+                </div>
+
                 <div class="school-photo-header">
-                    <h1>THƯ VIỆN ẢNH</h1>
+                    <h1 class="library-image">THƯ VIỆN ẢNH</h1>
                     <p>Khoa Tiếng Italia dưới góc nhìn của CBGV, SV </p>
                 </div>
 
@@ -500,6 +464,8 @@
 
 
     <script src="./js/index.js"></script>
+    <script src="./js/sharings.js"></script>
+    <script src="./js/select.js"></script>
 </body>
 
 </html>

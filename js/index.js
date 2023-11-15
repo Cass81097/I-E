@@ -3,16 +3,16 @@ $(document).ready(function () {
     let arrowRight = $('.fa-news-right');
     let newsTitles = [
         'Tọa đàm Dịch Văn học dành cho SV định hướng',
-        'Nội dung tin tức 2',
+        'Khu nghiên cứu dành cho SV',
         'Nội dung tin tức 3'
     ];
     let newsContents = [
-        `Sáng ngày 13/4/2022, Khoa tiếng Italia đã tổ chức buổi
+        `Sáng ngày 21/10/2023, Khoa tiếng Italia đã tổ chức buổi
         Tọa đàm Dịch văn học với sự tham gia của diễn giả
         Nguyễn Xuân Hồng - Một dịch giả có nhiều tác phẩm
         dịch có uy tín. Khách mời của buổi tọa đàm là dịch giả,
         nhà báo Nguyễn Xuân Hồng, Trưởng phòng thư kí tòa`,
-        'Nội dung tin tức 2',
+        'Chiều ngày 08/10/2023, Khoa tiếng Italia có mở một trung tâm nghiên cứu hóa học dành cho sinh viên có đam mê',
         'Nội dung tin tức 3'
     ];
     let newsImages = [
@@ -78,82 +78,82 @@ $(document).ready(function () {
 });
 
 // Handle Education
-// document.addEventListener('DOMContentLoaded', function() {
-//     // Xác định các biểu tượng mũi tên
-//     let arrowLeft = document.querySelector('.fa-news-left');
-//     let arrowRight = document.querySelector('.fa-news-right');
+$(document).ready(function () {
+    let arrowLeft = $('.fa-educations-left');
+    let arrowRight = $('.fa-educations-right');
 
-//     // Mảng các nội dung tin tức (ví dụ)
-//     let newsTitles = [
-//         'Tọa đàm Dịch Văn học dành cho SV định hướng',
-//         'Nội dung tin tức 2',
-//         'Nội dung tin tức 3'
-//     ];
+    let educationsTitles = [
+        'Hệ Chính quy Ngôn ngữ Italia',
+        'Giảng dạy hóa học',
+        'Nội dung tin tức 3'
+    ];
 
-//     let newsContents = [
-//         `Sáng ngày 13/4/2022, Khoa tiếng Italia đã tổ chức buổi
-//         Tọa đàm Dịch văn học với sự tham gia của diễn giả
-//         Nguyễn Xuân Hồng - Một dịch giả có nhiều tác phẩm
-//         dịch có uy tín. Khách mời của buổi tọa đàm là dịch giả,
-//         nhà báo Nguyễn Xuân Hồng, Trưởng phòng thư kí tòa`,
-//         'Nội dung tin tức 2',
-//         'Nội dung tin tức 3'
-//     ];
+    let educationsContents = [
+        `Chương trình đào tạo đại học ngành Ngôn ngữ Italia nhằm
+        đào tạo sinh viên có phẩm chất chính trị vững vàng; có kiến
+        thức, kỹ năng, thái độ và đạo đức phù hợp để làm việc trong
+        môi trường đa ngôn ngữ, đa văn hóa và có khả năng thích ứng
+        cao với những thay đổi nhanh chóng của nền kinh tế đang
+        trong quá trình hội.`,
+        `Chương trình đào tạo đại học ngành Ngôn ngữ Italia giảng dạy thêm về môn hóa học giúp sinh viên có nhiều kiến thức bổ ích và phát triển.`,
+        'Nội dung tin tức 3'
+    ];
 
-//     let newsImages = [
-//         './assets/images/news.jpg',
-//         './assets/images/news/image1.jpg',
-//         './assets/images/news/image2.jpg'
-//     ];
+    let educationsImages = [
+        './assets/images/educations/education.png',
+        './assets/images/educations/abstract-abstraction-biology-chemistry-wallpaper-preview.jpg',
+        './assets/images/educations/background-book-bookcase-books.jpg'
+    ];
 
-//     let newsTime = [
-//         '21/10/2023',
-//         '08/10/2023',
-//         '16/09/2023'
-//     ];
+    let currentIndex = 0;
 
-//     let currentIndex = 0;
+    function updateEducationsContent(index) {
+        let educationsTitleDiv = $('.educations-title');
+        let educationsContentDiv = $('.educations-content');
+        let educationsImageDiv = $('.educations-image');
 
-//     function updateNewsContent(index) {
-//         let newsTitleDiv = document.querySelector('.news-title');
-//         let newsContentDiv = document.querySelector('.news-content');
-//         let newsImageDiv = document.querySelector('.news-image');
-//         let newsTimeDiv = document.querySelector('.news-time');
+        let directionClass = index > currentIndex ? 'animateRight' : 'animateLeft';
+        let oppositeDirectionClass = index > currentIndex ? 'animateLeft' : 'animateRight';
 
-//         let directionClass = index > currentIndex ? 'animateRight' : 'animateLeft';
-//         let oppositeDirectionClass = index > currentIndex ? 'animateLeft' : 'animateRight';
+        if (index === 0 && currentIndex === 0) {
+            educationsTitleDiv.html(educationsTitles[index]);
+            educationsContentDiv.html(educationsContents[index]);
+            educationsImageDiv.attr('src', educationsImages[index]);
+            return;
+        }
 
-//         newsImageDiv.classList.add(directionClass);
+        if (index === educationsContents.length - 1 && currentIndex === educationsContents.length - 1) {
+            return;
+        }
 
-//         setTimeout(function() {
-//             newsContentDiv.innerHTML = newsContents[index];
-//             newsTitleDiv.innerHTML = newsTitles[index];
-//             newsImageDiv.src = newsImages[index];
-//             newsTimeDiv.innerHTML = newsTime[index];
+        educationsImageDiv.addClass(directionClass);
+        setTimeout(function () {
+            educationsTitleDiv.html(educationsTitles[index]);
+            educationsContentDiv.html(educationsContents[index]);
+            educationsImageDiv.attr('src', educationsImages[index]);
 
-//             newsImageDiv.classList.remove(directionClass);
+            educationsImageDiv.removeClass(directionClass);
 
-//             setTimeout(function() {
-//                 newsImageDiv.classList.remove(oppositeDirectionClass);
-//             }, 300);
-//         }, 300);
+            setTimeout(function () {
+                educationsImageDiv.removeClass(oppositeDirectionClass);
+            }, 300);
+        }, 300);
 
-//         currentIndex = index;
-//     }
+        currentIndex = index;
+    }
 
-//     updateNewsContent(currentIndex);
+    updateEducationsContent(currentIndex);
 
-//     arrowLeft.addEventListener('click', function() {
-//         let newIndex = currentIndex > 0 ? currentIndex - 1 : newsContents.length - 1;
-//         updateNewsContent(newIndex);
-//     });
+    arrowLeft.on('click', function () {
+        let newIndex = currentIndex > 0 ? currentIndex - 1 : currentIndex;
+        updateEducationsContent(newIndex);
+    });
 
-//     arrowRight.addEventListener('click', function() {
-//         let newIndex = currentIndex < newsContents.length - 1 ? currentIndex + 1 : 0;
-//         updateNewsContent(newIndex);
-//     });
-// });
-
+    arrowRight.on('click', function () {
+        let newIndex = currentIndex < educationsContents.length - 1 ? currentIndex + 1 : currentIndex;
+        updateEducationsContent(newIndex);
+    });
+});
 
 // Handle Cooperate
 document.addEventListener('DOMContentLoaded', function () {
@@ -218,3 +218,4 @@ document.addEventListener('DOMContentLoaded', function () {
         updateNewsContent(currentIndex);
     });
 });
+

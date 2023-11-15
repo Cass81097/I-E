@@ -1,3 +1,7 @@
+header {
+    height: 700px;
+}
+
 .header-shape {
     position: relative;
     top: -804px;
@@ -85,7 +89,7 @@
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    /* height: 102px; */
+    height: 100px;
 }
 
 .shape-fill {

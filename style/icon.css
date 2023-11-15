@@ -5,3 +5,19 @@
 .fa-long-arrow-alt-right {
     cursor: pointer;
 }
+
+.select {
+    position: relative;
+}
+
+.select::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: 10px;
+    height: 2px;
+    background: #fff;
+    transform: rotate(180deg);
+    border-radius: 50px 50px 0px 0px;
+}
