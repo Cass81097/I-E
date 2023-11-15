@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+body {
+    max-height: 100vh;
+}
+
 .navbar--school {
     margin-top: 20px;
     display: flex;
@@ -15,8 +19,16 @@
     width: 100%;
 }
 
+p {
+    margin-bottom: unset;
+}
+
 h4 {
     margin-bottom: unset;
+}
+
+.navbar-icon {
+    z-index: 1;
 }
 
 .navbar-school {
@@ -26,6 +38,8 @@ h4 {
 
 .navbar-info {
     margin-left: 10px;
+    color: white;
+    z-index: 1;
 }
 
 .navbar-info p {
@@ -34,6 +48,8 @@ h4 {
 
 .navbar-school-menu {
     display: flex;
+    z-index: 1;
+    color: white;
 }
 
 .navbar-school-menu p {
@@ -48,16 +64,21 @@ h4 {
 }
 
 .icon-search {
+    color: white;
+    z-index: 1;
     font-size: 20px;
 }
 
 .header-intro {
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-top: 100px;
+    color: white;
+    z-index: 1;
 }
 
 /* .school-body {
@@ -82,7 +103,7 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 100px
+    margin-top: 200px; 
 }
 
 .school-info-1 {
@@ -96,7 +117,6 @@ h4 {
     flex-direction: column;
     margin-right: 20px;
     margin-top: 40px;
-    border: 1px solid white;
     border-radius: 0px 40px; 
 }
 
@@ -110,7 +130,6 @@ h4 {
     align-items: center;
     flex-direction: column;
     margin-right: 20px;
-    border: 1px solid white;
     border-radius: 0px 40px;
 }
 
@@ -196,7 +215,7 @@ h4 {
     width: 48%;
     height: 300px;
     overflow: hidden;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     border-radius: 5px 5px 5px 40px;
 }
 
@@ -318,7 +337,7 @@ h4 {
     width: 48%;
     height: 200px;
     overflow: hidden;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     border-radius: 5px 5px 40px 5px;
 }
 
@@ -353,11 +372,38 @@ h4 {
 
 /* Research */
 .school-research {
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(0deg, rgb(161 231 184 / 0%) 0%, rgb(1,158,72) 100%, rgba(221,0,0,1) 100%);
+    position: relative;
     margin-top: 100px;
 }
 
+.custom-shape-divider-bottom-1699974326 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    /* transform: rotate(180deg); */
+}
+
+.custom-shape-divider-bottom-1699974326 svg {
+    position: relative;
+    display: block;
+    /* width: calc(100% + 300px); */
+    height: 190px;
+}
+
+.custom-shape-divider-bottom-1699974326 .shape-fill {
+    fill: #FFFFFF;
+}
+
 .school-research-header {
+    margin-top: 100px;
     text-align: right;
+    color: white;
 }
 
 .school-research-header p {
@@ -365,19 +411,20 @@ h4 {
 }
 
 .school-researches-detail {
-    padding: 10px;
-    background-color: transparent;
+    padding: 15px;
+    background-color: #EDF5F4;
+    border-radius: 4px 40px 4px 40px;
 }
 
 .school-researches {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .school-researches-image {
     width: 350px;
     height: 250px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     border-radius: 5px 40px 5px 40px;
     overflow: hidden;
 }
@@ -389,7 +436,7 @@ h4 {
 }
 
 .detail-two {
-    margin-top: 40px;
+    transform: translateY(60px);
 }
 
 .school-researches-info {
@@ -423,7 +470,7 @@ h4 {
 .school-cooperates-image {
     width: 200px;
     height: 250px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     border-radius: 5px 40px 5px 40px;
     overflow: hidden;
     margin-right: 5px;
@@ -554,7 +601,7 @@ h4 {
     width: 30%;
     position: relative;
     height: 100%;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     border-radius : 4px 40px 4px 40px;
     box-shadow: 0 5px 7px rgba(0, 0, 0, 0.3);
     margin-right: 30px;
@@ -601,3 +648,59 @@ h4 {
 .school-sharings {
     display: flex;
 }
+
+.school-sharings-page {
+    text-align: right;
+    margin: 50px 20px 0px 0px;
+}
+
+.school-sharings-page i{
+    font-size: 20px;
+    color: #1daf03;
+}
+
+/* Photos */
+.school-photos-detail {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.school-photos-image {
+    overflow: hidden;
+    height: 250px;
+    border-radius: 4px 40px 4px 40px;
+    margin: 5px;
+}
+
+.school-photos-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-1 {
+    width: calc(60% - 10px);
+}
+
+.image-2 {
+    width: calc(40% - 10px);
+}
+
+.image-3 {
+    width: calc(30% - 10px);
+}
+
+.image-4 {
+    width: calc(30% - 10px);
+}
+
+.school-photos-page {
+    text-align: center;
+    margin: 50px 20px 0px 0px;
+}
+
+.school-photos-page i{
+    font-size: 20px;
+    color: #1daf03;
+}
+
