@@ -11,6 +11,11 @@ body {
     max-height: 100vh;
 }
 
+.row {
+    width: 100%;
+    height: 100%;
+}
+
 .navbar--school {
     margin-top: 20px;
     display: flex;
@@ -19,7 +24,7 @@ body {
     width: 100%;
     position: fixed;
     top: -21px;
-    z-index: 1;
+    z-index: 999;
     background: #39B56A;
     height: 70px;
     padding-top: 12px;
@@ -60,7 +65,7 @@ h4 {
 }
 
 .navbar-school-menu p {
-    padding: 10px;
+    margin: 10px;
     font-size: 15px;
     cursor: pointer;
 }
@@ -71,10 +76,53 @@ h4 {
     align-items: center;
 }
 
+.search-input {
+    display: block;
+    position: fixed;
+    width: 200px;
+    z-index: 1;
+    top: 50px;
+    right: -3.5%;
+}
+
+.search-input input[type="text"] {
+    width: 60%;
+    /* Adjust the width as per your design */
+    padding: 5px 15px;
+    font-size: 16px;
+    /* Adjust font size as needed */
+    border: 1px solid #ccc;
+    /* Border color */
+    border-radius: 25px;
+    /* Rounded corners */
+    outline: none;
+    /* Removes the default focus outline */
+    transition: all 0.3s ease;
+    /* Smooth transition for interactions */
+}
+
+.search-input input[type="text"]:focus {
+    border-color: #00ff51;
+    /* Change border color on focus */
+}
+
+.search-input input[type="text"]::placeholder {
+    color: #aaa;
+    /* Placeholder text color */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .search-input input[type="text"] {
+        width: 80%;
+    }
+}
+
 .icon-search {
     color: white;
     z-index: 1;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .header-intro {
@@ -88,11 +136,6 @@ h4 {
     color: white;
     z-index: 1;
 }
-
-/* .school-body {
-    position: relative;
-    padding: 0 100px;
-} */
 
 .school-points {
     position: absolute;
@@ -212,7 +255,7 @@ h4 {
 
 .school-new {
     width: 100%;
-    padding: 70px 40px;
+    padding: 0px 40px 70px 40px;
     position: relative;
 }
 
@@ -247,11 +290,9 @@ h4 {
 }
 
 .school-news-image {
-    width: 48%;
     height: 300px;
     overflow: hidden;
-    /* border: 1px solid white; */
-    border-radius: 5px 5px 5px 40px;
+    border-radius: 5px 5px 5px 80px;
 }
 
 .school-news-image img {
@@ -268,11 +309,15 @@ h4 {
 }
 
 .school-news-content {
-    width: 48%;
-    margin-left: 40px;
-    height: 300px;
     padding-top: 50px;
     position: relative;
+}
+
+.school-news-content-md {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .school-news-content p {
@@ -289,9 +334,9 @@ h4 {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    position: absolute;
+    /* position: absolute;
     bottom: 20px;
-    width: 95%;
+    width: 95%; */
 }
 
 .school-news-footer p {
@@ -362,6 +407,7 @@ h4 {
     align-items: center;
     padding-top: 20px;
     position: relative;
+    height: 250px
 }
 
 .school-point-out {
@@ -386,7 +432,6 @@ h4 {
 }
 
 .school-educations-image {
-    width: 48%;
     height: 200px;
     overflow: hidden;
     /* border: 1px solid white; */
@@ -397,12 +442,6 @@ h4 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.school-educations-content {
-    width: 50%;
-    height: 200px;
-    padding-top: 20px;
 }
 
 .school-educations-content h5 {
@@ -419,7 +458,7 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 50%;
+    width: 100%;
 }
 
 .school-educations-page {
@@ -431,15 +470,14 @@ h4 {
     color: #1daf03;
 }
 
-/* Research */
-.school-research {
-    width: 100%;
-    height: 600px;
-    background: linear-gradient(0deg, rgb(161 231 184 / 0%) 0%, rgb(1, 158, 72) 100%, rgba(221, 0, 0, 1) 100%);
-    position: relative;
-    margin-top: 100px;
+.school-educations-content-md {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+/* Research */
 .school-research-point {
     position: absolute;
     z-index: 1;
@@ -451,6 +489,22 @@ h4 {
     color: #109106;
     font-size: 25px;
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.research-shape {
+    width: 100%;
+    height: 650px;
+    background: linear-gradient(0deg, rgb(161 231 184 / 0%) 0%, rgb(1, 158, 72) 100%, rgb(255, 255, 255) 100%);
+    position: relative;
+    z-index: 1;
+
+}
+
+.school-research {
+    position: relative; 
+    margin-top: -650px;
+    z-index: 2; 
+    padding-top: 50px; 
 }
 
 .custom-shape-divider-bottom-1699974326 {
@@ -475,10 +529,11 @@ h4 {
 }
 
 .school-research-header {
-    margin-top: 100px;
     margin-right: 30px;
     text-align: right;
-    color: white;
+    color: #fff;
+    z-index: 1;
+    position: relative;
 }
 
 .school-research-header p {
@@ -489,11 +544,13 @@ h4 {
     padding: 15px;
     background-color: #EDF5F4;
     border-radius: 4px 40px 4px 40px;
+    width: 380px;
 }
 
 .school-researches {
     display: flex;
     justify-content: space-evenly;
+    z-index: 1;
 }
 
 .school-researches-image {
@@ -531,9 +588,16 @@ h4 {
     color: red;
 }
 
+.md {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Cooperate */
 .school-cooperate {
     margin-top: 80px;
+    margin-top: 150px;
     position: relative;
 }
 
@@ -557,7 +621,7 @@ h4 {
 }
 
 .school-cooperates-detail {
-    /* transform: translateX(-75px); */
+    transform: translateX(-75px);
     display: flex;
     margin-top: 80px;
 }
@@ -567,11 +631,14 @@ h4 {
     align-items: flex-start;
 }
 
-.school-cooperates-image-container {
+.school-cooperates-container {
     position: relative;
+}
+
+.school-cooperates-image-container {
+    position: absolute;
+    width: 400px;
     height: 500px;
-    transform: translateY(-90px);
-    margin-left: 200px;
 }
 
 .school-cooperates-image-container img {
@@ -581,12 +648,16 @@ h4 {
     opacity: 0.1;
 }
 
-.text-cooperates {
+.school-cooperates-image-container {
     position: absolute;
-    top: 100px;
+    top: -80px;
     left: 0;
+    z-index: -1; 
+}
+
+.text-cooperates {
     width: 100%;
-    height: 400px;
+    height: 250px;
     color: black;
 }
 
@@ -594,6 +665,7 @@ h4 {
     font-size: 1.2rem;
     font-weight: bolder;
     margin-top: 100px;
+    margin-left: 6px;
 }
 
 .text-cooperates p {
@@ -605,10 +677,7 @@ h4 {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    width: 100%;
-    margin-top: 20px;
-    position: absolute;
-    bottom: 100px;
+    margin-top: 70px;
 }
 
 .school-cooperates-footer i {
@@ -632,9 +701,7 @@ h4 {
 .school-cooperates-page {
     width: 100%;
     text-align: right;
-    position: absolute;
-    bottom: 120px;
-    right: 70px;
+    transform: translateX(-30px);
 }
 
 .school-cooperates-page i {
@@ -645,6 +712,7 @@ h4 {
 /* Sharing */
 .school-sharing {
     position: relative;
+    margin-top: 50px;
 }
 
 .school-sharing-point {
@@ -744,7 +812,8 @@ h4 {
 
 .school-sharings-page {
     text-align: right;
-    margin: 50px 20px 0px 0px;
+    margin-top: 50px;
+    transform: translateX(-30px);
 }
 
 .school-sharings-page i {
@@ -753,6 +822,37 @@ h4 {
 }
 
 /* Photos */
+.animatePhotoRight {
+    animation: slideRight 0.5s forwards;
+}
+
+.animatePhotoLeft {
+    animation: slideLeft 0.5s forwards;
+}
+
+@keyframes slideRight {
+    from {
+        opacity: 1;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        opacity: 1;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
 .school-photo {
     position: relative;
 }
@@ -767,13 +867,25 @@ h4 {
     font-weight: lighter;
 }
 
-.school-photo-point {
+.school-photo-point-1 {
     position: absolute;
     top: 8%;
     right: 30px;
 }
 
-.school-photo-point i {
+.school-photo-point-2 {
+    position: absolute;
+    top: 60%;
+    left: -40px
+}
+
+.school-photo-point-3 {
+    position: absolute;
+    bottom: -40px;
+    right: 10%;
+}
+
+.fa-point {
     color: #109106;
     font-size: 25px;
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);

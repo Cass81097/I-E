@@ -1,0 +1,70 @@
+/* New Responsive */
+.school-new-header {
+    margin-bottom: 20px;
+}
+
+.school-point {
+    color: #007bff;
+    /* Adjust the color as needed */
+    font-size: 24px;
+    /* Adjust the size as needed */
+}
+
+.school-new-info h1 {
+    font-size: 1.75rem;
+    /* Adjust the size as needed */
+    color: #333;
+    /* Adjust the color as needed */
+}
+
+.school-news-image {
+    margin-bottom: 15px;
+    /* Spacing for smaller screens */
+}
+
+.school-news-content {
+    padding: 0 15px;
+    /* Spacing for text content */
+}
+
+.school-news-footer {
+    margin-top: 20px;
+}
+
+.school-news-page {
+    margin-top: 30px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .rp {
+        padding: 0;
+    }
+}
+
+.school-educations-content {
+    padding: 0 37px;
+    /* Spacing for text content */
+}
+
+@media (max-width: 768px) {
+    .col-sharings {
+        flex: 0 0 auto;
+        width: 28%;
+    }
+
+    .row-sharings {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-1, .image-2, .image-3, .image-4, .image-5 {
+        width: 100%;
+    }
+
+    .school-photos-image {
+        height: 150px;
+    }
+}
+

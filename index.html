@@ -22,10 +22,11 @@
     <link rel="stylesheet" href="./style/icon.css">
     <link rel="stylesheet" href="./style/footer.css">
     <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/res.css">
 </head>
 
 <body>
-    <header class="container-fluid bg-light py-3">
+    <header class="container-fluid py-3">
         <div class="navbar--school">
             <div class="navbar-school">
                 <div class="navbar-icon">
@@ -47,9 +48,13 @@
                     <p>THƯ VIỆN ẢNH</p>
                 </div>
             </div>
-            <div class="icon-search">
+            <div class="icon-search" onclick="toggleSearch()">
                 <i class="fas fa-search"></i>
             </div>
+        </div>
+
+        <div id="searchInput" class="search-input" style="display: none;">
+            <input type="text" placeholder="Search...">
         </div>
 
         <div class="header-intro">
@@ -132,58 +137,57 @@
                     </svg>
                 </div>
             </div>
+        </div>
 
     </header>
 
-    <div class="container my-4">
-        <div class="row">
-
-            <div class="school-new">
-                <div class="school-new-header">
-                    <div class="school-point">
+    <div class="container news">
+        <div class="school-new row">
+            <div class="col-12">
+                <div class="school-new-header d-flex align-items-center">
+                    <div class="school-point me-2">
                         <i class="fas fa-circle"></i>
                     </div>
-
-                    <div class="school-new-info ">
+                    <div class="school-new-info">
                         <h1 class="news">TIN TỨC - SỰ KIỆN</h1>
                         <p>Tổng hợp tin tức, sự kiện mới nhất của khoa Tiếng Italia</p>
                     </div>
                 </div>
-
-
-                <div class="school-news ">
-                    <div class="school-news-image">
-                        <img class="news-image" src="" alt="News Image">
-                    </div>
-
-                    <div class="school-news-content">
-                        <h5 class="news-title"></h5>
-                        <p class="news-content"></p>
-
-                        <div class="school-news-footer">
-                            <i class="fas fa-history">
-                                <span class="news-time"></span>
-                            </i>
-                            <button type="button" class="btn btn-success">Xem thêm</button>
-                        </div>
-                    </div>
-                    
-                    <div class="school-news-point">
-                        <i class="fas fa-circle"></i>
-                    </div>
-
-                </div>
-
-                <div class="school-news-page">
-                    <i class="fas fa-long-arrow-alt-left fa-news-left"></i>
-                    <i class="fas fa-long-arrow-alt-right fa-news-right "></i>
-                </div>
-
             </div>
 
-            <div class="school-education">
+            <div class="school-news col-12">
+                <div class="row">
+                    <div class="school-news-image rp col-md-6 col-sm-12">
+                        <img class="news-image" src="" alt="News Image">
+                    </div>
+                    <div class="school-news-content rp col-md-6 col-sm-12">
+                        <div class="school-news-content-md">
+                            <div>
+                                <h5 class="news-title"></h5>
+                                <p class="news-content"></p>
+                            </div>
+                            <div class="school-news-footer d-flex align-items-center">
+                                <i class="fas fa-history me-2"></i>
+                                <span class="news-time"></span>
+                                <button type="button" class="btn btn-success ms-auto">Xem thêm</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                <div class="school-education-header ">
+            <div class="school-news-page col-12">
+                <i class="fas fa-long-arrow-alt-left fa-news-left me-2"></i>
+                <i class="fas fa-long-arrow-alt-right fa-news-right"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Education -->
+    <div class="container educations">
+        <div class="school-education row">
+            <div class="col-12">
+                <div class="school-education-header d-flex align-items-center">
                     <div class="school-point-education">
                         <i class="fas fa-circle"></i>
                     </div>
@@ -192,37 +196,56 @@
                         <p>Chương trình đào tạo chuẩn đầu ra Ngành Ngôn ngữ Italia</p>
                     </div>
                 </div>
+            </div>
 
-                <div class="school-educations">
-
-                    <div class="school-point-out">
+            <div class="school-educations col-12">
+                <div class="row">
+                    <div class="school-point-out col-sm-12">
                         <i class="fas fa-circle"></i>
                     </div>
 
-                    <div class="school-educations-content">
-                        <h5 class="educations-title"></h5>
-                        <p class="educations-content"></p>
-
+                    <div class="school-educations-content rp col-md-6 col-sm-12">
+                        <div class="school-educations-content-md">
+                            <div>
+                                <h5 class="educations-title"></h5>
+                                <p class="educations-content"></p>
+                            </div>
+                            <div class="school-educations-footer d-flex align-items-center">
+                                <button type="button" class="btn btn-success">Xem thêm</button>
+                                <div class="school-educations-page">
+                                    <i class="fas fa-long-arrow-alt-left fa-educations-left"></i>
+                                    <i class="fas fa-long-arrow-alt-right fa-educations-right"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="school-educations-image">
+                    <div class="school-educations-image rp col-md-6 col-sm-12">
                         <img class="educations-image" src="" alt="">
                     </div>
                 </div>
-                <div class="school-educations-footer">
-                    <button type="button" class="btn btn-success">Xem thêm</button>
-                    <div class="school-educations-page">
-                        <i class="fas fa-long-arrow-alt-left fa-educations-left"></i>
-                        <i class="fas fa-long-arrow-alt-right fa-educations-right"></i>
-                    </div>
-                </div>
-               
             </div>
+        </div>
+    </div>
 
-            <!-- Research -->
 
-            <div class="school-research">
+    <!-- Research -->
 
+    <div class="container researches">
+
+        <div class="research-shape">
+            <div class="custom-shape-divider-bottom-1699974326">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+        </div>
+
+        <div class="school-research row">
+            <div class="col-12">
                 <div class="school-research-point">
                     <i class="fas fa-circle"></i>
                 </div>
@@ -231,49 +254,52 @@
                     <h1 class="researchs">NGHIÊN CỨU KHOA HỌC</h1>
                     <p>Hoạt động Nghiên cứu Khoa học cho Giảng viên và Sinh viên</p>
                 </div>
-
-                <div class="school-researches">
-                    <div class="school-researches-detail ">
-                        <div class="school-researches-image">
-                            <img src="./assets/images/study.webp" alt="">
-                        </div>
-                        <div class="school-researches-info">
-                            <h5>Nghiên cứu khoa học Giảng viên</h5>
-                            <button type="button" class="btn btn-success">Xem thêm</button>
-                        </div>
-                    </div>
-
-                    <div class="school-researches-detail detail-two">
-                        <div class="school-researches-image">
-                            <img src="./assets/images/study.webp" alt="">
-                        </div>
-                        <div class="school-researches-info">
-                            <h5>Nghiên cứu khoa học Sinh viên</h5>
-                            <button type="button" class="btn btn-success">Xem thêm</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="custom-shape-divider-bottom-1699974326">
-                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                        preserveAspectRatio="none">
-                        <path
-                            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-                            class="shape-fill"></path>
-                    </svg>
-                </div>
             </div>
 
+            <div class="school-researches">
+                <div class="row">
+                    <div class="rp col-md-6 col-sm-12 md">
+                        <div class="school-researches-detail">
+                            <div class="school-researches-image">
+                                <img src="./assets/images/study.webp" alt="">
+                            </div>
+                            <div class="school-researches-info">
+                                <h5>Nghiên cứu khoa học Giảng viên</h5>
+                                <button type="button" class="btn btn-success">Xem thêm</button>
+                            </div>
+                        </div>
 
-            <!-- Cooperate -->
-            <div class="school-cooperate">
+                    </div>
+
+                    <div class="rp col-md-6 col-sm-12">
+                        <div class="school-researches-detail detail-two ">
+                            <div class="school-researches-image">
+                                <img src="./assets/images/study.webp" alt="">
+                            </div>
+                            <div class="school-researches-info">
+                                <h5>Nghiên cứu khoa học Sinh viên</h5>
+                                <button type="button" class="btn btn-success">Xem thêm</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cooperate -->
+    <div class="container cooperates">
+        <div class="school-cooperate row">
+            <div class="col-12">
                 <div class="school-cooperate-header">
                     <h1 class="cooperates">HỢP TÁC</h1>
                     <p>Hoạt động hợp tác trong và ngoài nước của Khoa Tiếng Italia</p>
                 </div>
+            </div>
 
-                <div class="school-cooperates">
-                    <div class="school-cooperates-detail">
+            <div class="school-cooperates">
+                <div class="row position-relative">
+                    <div class="school-cooperates-detail rp col-md-6 col-sm-12">
                         <div class="school-cooperates-image" style="scale: 0.9;">
                             <img src="./assets/images/cooperate-3.jpg" alt="">
                         </div>
@@ -285,11 +311,12 @@
                         </div>
                     </div>
 
-                    <div class="school-cooperates-image-container">
-                        <img src="./assets/images/Italia_Bandiera.png" alt="Background Image">
+                    <div class="school-cooperates-container rp col-md-6 col-sm-12">
                         <div class="text-cooperates">
-                            <h5 class="cooperates-title"></h5>
-                            <p class="cooperates-content"></p>
+                            <div>
+                                <h5 class="cooperates-title"></h5>
+                                <p class="cooperates-content"></p>
+                            </div>
                             <div class="school-cooperates-footer">
                                 <i class="fas fa-history">
                                     <span class="cooperates-time"></span>
@@ -297,19 +324,24 @@
                                 <button type="button" class="btn btn-success">Xem thêm</button>
                             </div>
                         </div>
+                        <div class="school-cooperates-image-container">
+                            <img src="./assets/images/Italia.png" alt="Background Image" class="italia-background">
+                        </div>
                     </div>
-                </div>
-
-                <div class="school-cooperates-page">
-                    <i class="fas fa-long-arrow-alt-left fa-cooperates-left"></i>
-                    <i class="fas fa-long-arrow-alt-right fa-cooperates-right"></i>
                 </div>
             </div>
 
+            <div class="school-cooperates-page col-12">
+                <i class="fas fa-long-arrow-alt-left fa-cooperates-left"></i>
+                <i class="fas fa-long-arrow-alt-right fa-cooperates-right"></i>
+            </div>
+        </div>
+    </div>
 
-            <!-- Sharing -->
-            <div class="school-sharing">
-
+    <!-- Sharing -->
+    <div class="container sharings">
+        <div class="school-sharing row">
+            <div class="col-12">
                 <div class="school-sharing-point">
                     <i class="fas fa-circle"></i>
                 </div>
@@ -323,62 +355,78 @@
                         <p>Góc chia sẻ về những trải nghiệm của CBGV, SV Khoa Tiếng Italia</p>
                     </div>
                 </div>
+            </div>
 
-                <div class="school-sharings">
-                    <!-- Handle Sharings -->
-                </div>
+            <div class="school-sharings">
+                <div class="row row-sharings">
 
-                <div class="school-sharings-page">
-                    <i class="fas fa-long-arrow-alt-left fa-sharings-left"></i>
-                    <i class="fas fa-long-arrow-alt-right fa-sharings-right "></i>
-                </div>
-
-                <div class="school-point-education">
-                    <i class="fas fa-circle"></i>
                 </div>
             </div>
 
+            <div class="school-sharings-page col-12">
+                <i class="fas fa-long-arrow-alt-left fa-sharings-left"></i>
+                <i class="fas fa-long-arrow-alt-right fa-sharings-right "></i>
+            </div>
 
-            <!-- Photo -->
-            <div class="school-photo">
+            <div class="school-point-education">
+                <i class="fas fa-circle"></i>
+            </div>
+        </div>
 
-                <div class="school-photo-point">
-                    <i class="fas fa-circle"></i>
+    </div>
+
+    <!-- Photo -->
+    <div class="container photos">
+
+
+        <div class="school-photo row ">
+            <div class="col-12">
+                <div class="school-photo-point-1">
+                    <i class="fas fa-circle fa-point"></i>
+                </div>
+
+                <div class="school-photo-point-2">
+                    <i class="fas fa-circle fa-point"></i>
+                </div>
+
+                <div class="school-photo-point-3">
+                    <i class="fas fa-circle fa-point"></i>
                 </div>
 
                 <div class="school-photo-header">
                     <h1 class="library-image">THƯ VIỆN ẢNH</h1>
                     <p>Khoa Tiếng Italia dưới góc nhìn của CBGV, SV </p>
                 </div>
+            </div>
 
-                <div class="school-photos">
+            <div class="school-photos">
+                <div class="row">
                     <div class="school-photos-detail">
-                        <div class="school-photos-image image-1">
-                            <img src="./assets/images/photos/1.jpg" alt="">
+                        <div class="school-photos-image image-1 rp col-md-3 col-sm-12">
+                            <img class="photos-1" src="" alt="">
                         </div>
-                        <div class="school-photos-image image-2">
-                            <img src="./assets/images/photos/2.png" alt="">
+                        <div class="school-photos-image image-2 rp col-md-3 col-sm-12">
+                            <img class="photos-2" src="" alt="">
                         </div>
-                        <div class="school-photos-image image-3">
-                            <img src="./assets/images/photos/3.avif" alt="">
+                        <div class="school-photos-image image-3 rp col-md-3 col-sm-12">
+                            <img class="photos-3" src="" alt="">
                         </div>
-                        <div class="school-photos-image image-4">
-                            <img src="./assets/images/photos/4.jpg" alt="">
+                        <div class="school-photos-image image-4 rp col-md-3 col-sm-12">
+                            <img class="photos-4" src="" alt="">
                         </div>
-                        <div class="school-photos-image image-2">
-                            <img src="./assets/images/photos/5.jpg" alt="">
+                        <div class="school-photos-image image-2 rp col-md-3 col-sm-12">
+                            <img class="photos-5" src="" alt="">
                         </div>
                     </div>
-
-                </div>
-
-                <div class="school-photos-page">
-                    <i class="fas fa-long-arrow-alt-left fa-photos-left"></i>
-                    <i class="fas fa-long-arrow-alt-right fa-photos-right"></i>
                 </div>
             </div>
 
+            <div class="school-photos-page col-12">
+                <i class="fas fa-long-arrow-alt-left fa-photos-left"></i>
+                <i class="fas fa-long-arrow-alt-right fa-photos-right"></i>
+            </div>
         </div>
+
     </div>
 
     <!-- Footer -->
@@ -466,6 +514,8 @@
     <script src="./js/index.js"></script>
     <script src="./js/sharings.js"></script>
     <script src="./js/select.js"></script>
+    <script src="./js/search.js"></script>
+    <script src="./js/photos.js"></script>
 </body>
 
 </html>

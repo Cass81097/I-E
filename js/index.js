@@ -164,8 +164,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // Mảng các nội dung tin tức (ví dụ)
     let newsTitles = [
         'Call for papers Convego Internazionale ItaHanu',
-        'Nội dung tin tức 2',
-        'Nội dung tin tức 3'
+        'La Magia di Roma',
+        'Il Gusto della Cucina Italiana'
     ];
 
     let newsContents = [
@@ -174,8 +174,9 @@ document.addEventListener('DOMContentLoaded', function () {
         prima Settimana dell Italia in ASEAN, considerato il forte
         e reciproco interesse tra l Italia e l’ASEAN, l’Università di
         Hanoi (HANU) intende organizzare`,
-        'Nội dung tin tức 2',
-        'Nội dung tin tức 3'
+        `Roma non è solo una città, è un capolavoro vivente. Ogni strada racconta storie di imperi, artisti e santi. Passeggiando per i suoi vicoli, si può sentire il respiito della storia in ogni pietra. La città eterna incanta con il suo mix di antico e moderno, un luogo dove il tempo sembra essersi fermato`,
+        `La cucina italiana è un’arte che celebra la semplicità e la qualità degli ingredienti. Ogni regione ha i suoi piatti unici, ricchi di sapori e tradizioni. Dai formaggi ricchi ai vini robusti, ogni boccone è un viaggio attraverso i sensi. Mangiare in Italia è un'esperienza che unisce famiglia, amici e la gioia della vita`,
+
     ];
 
     let newsTime = [

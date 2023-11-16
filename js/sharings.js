@@ -1,10 +1,10 @@
 $(document).ready(function () {
     let sharingsTitles = [
         `Đam mê quảng bá văn hóa Việt của nữ du học sinh Ý`,
-        `Hành trình khám phá Italy của cô gái Việt`,
-        `Nữ du học sinh Việt xinh đẹp, đạt điểm gần tuyệt đối`,
-        'Nội dung tin tức 4',
-        'Nội dung tin tức 5'
+        `Hành trình khám phá Italy của anh chàng Việt`,
+        `Nam du học sinh Việt đẹp trai, đạt điểm gần tuyệt đối`,
+        'Niềm vui khi học ngôn ngữ Ý của anh chàng sinh viên',
+        'Nam sinh đam mê học tiếng Ý của chàng Việt'
     ];
 
     let sharingsContents = [
@@ -12,19 +12,19 @@ $(document).ready(function () {
             mình, Vân cho biết: Em không có 
             ý định du học ngay từ đầu, mãi 
             đến hè năm lớp 10 lên lớp 11 em 
-            mới bắt đầu nhen nhóm ý tưởng`,
-        `Dung Trần có tình yêu đặc biệt 
-            dành cho Italy. Với cô, Italy là nơi 
-            Dung học tập để mở mang nhận 
-            thức lẫn trái tim . Cô ấn tượng với 
-            các công trình kiến trúc, văn hóa,`,
-        `Trước khi đi du học, Linh Trang là 
+            mới bắt đầu nhen nhóm ý tưởng.`,
+        `Nghĩa có tình yêu đặc biệt 
+            dành cho Italy. Với anh, Italy là nơi 
+            Nghĩa học tập để mở mang nhận 
+            thức lẫn trái tim . Anh ấn tượng với 
+            các công trình kiến trúc, văn hóa.`,
+        `Trước khi đi du học, Hoàng Anh là 
             niềm tự hào của gia đình khi luôn 
             đạt danh hiệu học sinh giỏi 12 
-            năm liên tiếp, ngoài ra, cô nàng 
-            còn từng là thành viên tích cực`,
-        'Nội dung tin tức 5',
-        'Nội dung tin tức 6'
+            năm liên tiếp, ngoài ra, anh chàng 
+            còn từng là thành viên tích cực.`,
+        'Chia sẻ về hành trình của Hiếu, trước đây chưa từng học ngoại ngữ. Nhưng từ học tiếng Ý, anh càng cảm thấy thích thú và hấp dẫn.',
+        'Phong có một niềm đam mê đặc biệt dành cho Italy. Với anh, việc học tiếng Ý không chỉ giúp anh hiểu thêm về nước Ý và còn giúp cho anh mở mang nhiều kiến thức lý thú hơn.'
     ];
 
     let sharingsImages = [
@@ -36,11 +36,11 @@ $(document).ready(function () {
     ];
 
     let sharingsTimes = [
-        '01/06/2023',
-        '16/09/2023',
-        '12/10/2023',
+        '14/11/2023',
         '12/11/2023',
-        '14/11/2023'
+        '12/10/2023',
+        '16/09/2023',
+        '01/06/2023'
     ];
 
     let initialSharingsTitles = sharingsTitles.slice(0, 3);
@@ -49,7 +49,7 @@ $(document).ready(function () {
     let initialSharingsTimes = sharingsTimes.slice(0, 3);
 
     function printInitialSharings() {
-        let container = $('.school-sharings');
+        let container = $('.row-sharings');
 
         for (let i = 0; i < initialSharingsTitles.length; i++) {
             // Check if any of the details is empty
@@ -57,7 +57,7 @@ $(document).ready(function () {
                 continue; // Skip this iteration if any detail is empty
             }
 
-            let sharingPersonDiv = $('<div class="school-sharings-people"></div>');
+            let sharingPersonDiv = $('<div class="school-sharings-people rp col-md-4 col-sharings col-sm-12"></div>');
             let sharingsAvatarDiv = $('<div class="school-sharings-avatar"></div>');
             let sharingsImage = $('<img class="sharings-image" src="" alt="">');
             let sharingsDetailDiv = $('<div class="school-sharings-detail"></div>');
@@ -96,8 +96,8 @@ $(document).ready(function () {
 
     let currentIndex = 0;
 
-    function refreshSharings() {
-        $('.school-sharings').empty();
+    function refreshSharings() {    
+        $('.row-sharings').empty();
         printInitialSharings();
     }
 
@@ -118,7 +118,7 @@ $(document).ready(function () {
                 initialSharingsTimes.pop();
                 initialSharingsTimes.unshift(sharingsTimes[currentIndex]);
 
-                $('.school-sharings').animate({
+                $('.row-sharings').animate({
                     'margin-left': '+=200px' 
                 }, 300, function() {
                 
@@ -148,7 +148,7 @@ $(document).ready(function () {
                 initialSharingsTimes.shift();
                 initialSharingsTimes.push(sharingsTimes[currentIndex + 2]);
     
-                $('.school-sharings').animate({
+                $('.row-sharings').animate({
                     'margin-left': '-=200px' 
                 }, 300, function() {
                 
