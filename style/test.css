@@ -1,54 +1,81 @@
-.school {
-    font-family: Arial, sans-serif; /* Example font */
+.header {
+    padding: 1rem 0;
 }
 
-.school-new-header {
-    margin-bottom: 20px;
+.navbar--school {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.school-point {
-    color: #007bff; /* Adjust the color as needed */
-    font-size: 24px; /* Adjust the size as needed */
+.navbar-school, .navbar-menu, .icon-search {
+    flex: 1 1 auto;
 }
 
-.school-new-info h1 {
-    font-size: 1.75rem; /* Adjust the size as needed */
-    color: #333; /* Adjust the color as needed */
+.navbar-school {
+    display: flex;
+    align-items: center;
 }
 
-.school-news-image {
-    margin-bottom: 15px; /* Spacing for smaller screens */
+.navbar-info h4, .navbar-info p {
+    margin: 0; /* Removes default margins */
 }
 
-.school-news-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px; /* Optional: if you want rounded corners */
+.navbar-menu {
+    text-align: center;
 }
 
-.school-news-content {
-    padding: 0 15px; /* Spacing for text content */
-}
-
-.school-news-footer {
+.header-intro, .school-info, .header-shape {
     margin-top: 20px;
 }
 
-.school-news-footer .btn-success {
-    color: #fff;
-    background-color: #28a745; /* Bootstrap's success color */
-    border-color: #28a745; /* Bootstrap's success border color */
+.school-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.school-news-page {
-    margin-top: 30px;
+.school-info > div {
+    flex-basis: calc(50% - 10px); /* Adjusts the basis of each info block */
+    margin-bottom: 10px;
+    text-align: center; /* Centers the content */
+}
+
+.school-info-icon {
+    font-size: 2rem; /* Adjusts the size of icons */
+}
+
+.school-info-number h1 {
+    margin: 0;
 }
 
 /* Responsive adjustments */
-@media (max-width: 767px) {
-    .school-news-image, .school-news-content {
-        padding: 0;
+@media (max-width: 768px) {
+    .navbar--school, .navbar-school, .navbar-menu, .icon-search {
+        flex-basis: 100%; /* Stacks the navbar items vertically on smaller screens */
+        text-align: center;
     }
+
+    .school-info > div {
+        flex-basis: 100%; /* Full width for each info block on smaller screens */
+    }
+
+    .school-info {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .navbar-school, .navbar-menu, .icon-search {
+        flex: 1 1 auto;
+    }
+    
+    .navbar-school {
+        display: flex;
+        align-items: center;
+    }
+    
 }
 
-/* Additional styles as needed */
+/* Additional responsive adjustments as needed */

@@ -174,8 +174,8 @@ document.addEventListener('DOMContentLoaded', function () {
         prima Settimana dell Italia in ASEAN, considerato il forte
         e reciproco interesse tra l Italia e l’ASEAN, l’Università di
         Hanoi (HANU) intende organizzare`,
-        `Roma non è solo una città, è un capolavoro vivente. Ogni strada racconta storie di imperi, artisti e santi. Passeggiando per i suoi vicoli, si può sentire il respiito della storia in ogni pietra. La città eterna incanta con il suo mix di antico e moderno, un luogo dove il tempo sembra essersi fermato`,
-        `La cucina italiana è un’arte che celebra la semplicità e la qualità degli ingredienti. Ogni regione ha i suoi piatti unici, ricchi di sapori e tradizioni. Dai formaggi ricchi ai vini robusti, ogni boccone è un viaggio attraverso i sensi. Mangiare in Italia è un'esperienza che unisce famiglia, amici e la gioia della vita`,
+        `Roma non è solo una città, è un capolavoro vivente. Ogni strada racconta storie di imperi, artisti e santi. Passeggiando per i suoi vicoli, si può sentire il respiito della storia in ogni pietra. Ogni strada racconta storie di imperi`,
+        `La cucina italiana è un’arte che celebra la semplicità e la qualità degli ingredienti. Ogni regione ha i suoi piatti unici, ricchi di sapori e tradizioni. Dai formaggi ricchi ai vini robusti, ogni boccone è un viaggio attraverso i sensi`
 
     ];
 

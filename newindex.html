@@ -24,54 +24,120 @@
 
 <body>
    
-    <div class="container school">
-        <div class="school-new row">
-            <div class="col-12">
-                <div class="school-new-header d-flex align-items-center">
-                    <div class="school-point me-2">
-                        <i class="fas fa-circle"></i>
-                    </div>
-                    <div class="school-new-info">
-                        <h1 class="news">TIN TỨC - SỰ KIỆN</h1>
-                        <p>Tổng hợp tin tức, sự kiện mới nhất của khoa Tiếng Italia</p>
-                    </div>
+    <header class="container-fluid py-3">
+        <div class="navbar--school">
+            <div class="navbar-school">
+                <div class="navbar-icon">
+                    <img src="./assets/images/Logo.png" alt="">
+                </div>
+                <div class="navbar-info">
+                    <h4>KHOA TIẾNG ITALIA</h4>
+                    <p>Trường Đại học Hà Nội</p>
                 </div>
             </div>
-    
-            <!-- News Section -->
-            <div class="school-news col-12">
-                <div class="row">
-    
-                    <!-- News Image -->
-                    <div class="school-news-image col-md-5 col-sm-12">
-                        <img class="news-image" src="./assets/images/news.jpg" alt="News Image">
-                    </div>
-    
-                    <!-- News Content -->
-                    <div class="school-news-content col-md-7 col-sm-12">
-                        <h5 class="news-title">Tọa đàm Dịch Văn học dành cho SV định hướng</h5>
-                        <p class="news-content">Sáng ngày 21/10/2023, Khoa tiếng Italia đã tổ chức buổi
-                            Tọa đàm Dịch văn học với sự tham gia của diễn giả
-                            Nguyễn Xuân Hồng - Một dịch giả có nhiều tác phẩm
-                            dịch có uy tín. Khách mời của buổi tọa đàm là dịch giả,
-                            nhà báo Nguyễn Xuân Hồng, Trưởng phòng thư kí tòa</p>
-                        <div class="school-news-footer d-flex align-items-center">
-                            <i class="fas fa-history me-2"></i>
-                            <span class="news-time">21/10/2023</span>
-                            <button type="button" class="btn btn-success ms-auto">Xem thêm</button>
-                        </div>
-                    </div>
-                    
+            <div class="navbar-menu">
+                <div class="navbar-school-menu">
+                    <p class="select">GIỚI THIỆU</p>
+                    <p>TIN TỨC - SỰ KIỆN</p>
+                    <p>ĐÀO TẠO</p>
+                    <p>NGHIÊN CỨU KHOA HỌC</p>
+                    <p>HỢP TÁC</p>
+                    <p>CHIA SẺ - TRẢI NGHIỆM</p>
+                    <p>THƯ VIỆN ẢNH</p>
                 </div>
             </div>
-    
-            <!-- News Page Navigation -->
-            <div class="school-news-page col-12 text-center">
-                <i class="fas fa-long-arrow-alt-left fa-news-left me-2"></i>
-                <i class="fas fa-long-arrow-alt-right fa-news-right"></i>
+            <div class="icon-search" onclick="toggleSearch()">
+                <i class="fas fa-search"></i>
             </div>
         </div>
-    </div>
+
+        <div id="searchInput" class="search-input" style="display: none;">
+            <input type="text" placeholder="Search...">
+        </div>
+
+        <div class="header-intro">
+            <h1>Benvenuto Nel Dipartimento Italia!</h1>
+            <p>L'"unico luogo di formazione della lingua italiana al Nord</p>
+        </div>
+
+        <div class="school-info">
+            <div class="school-info-1">
+                <div class="school-info-icon">
+                    <i class="fas fa-pizza-slice"></i>
+                </div>
+                <div class="school-info-number">
+                    <h1>20</h1>
+                    <h5>Năm đào tạo</h5>
+                </div>
+            </div>
+
+            <div class="school-info-2">
+                <div class="school-info-icon">
+                    <i class="fas fa-ice-cream"></i>
+                </div>
+                <div class="school-info-number">
+                    <h1>1,000+</h1>
+                    <h5>SV được đào tạo</h5>
+                </div>
+            </div>
+
+            <div class="school-info-1">
+                <div class="school-info-icon">
+                    <i class="fas fa-cheese"></i>
+                </div>
+                <div class="school-info-number">
+                    <h1>100+</h1>
+                    <h5>Đối tác quốc tế</h5>
+                </div>
+            </div>
+
+            <div class="school-info-2">
+                <div class="school-info-icon">
+                    <i class="fas fa-pepper-hot"></i>
+                </div>
+                <div class="school-info-number">
+                    <h1>250+</h1>
+                    <h5>Chương trình trao đổi</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-shape container">
+            <div class="header-shape-1">
+                <div class="custom-shape-divider-bottom-1699974326-header-1">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                        preserveAspectRatio="none">
+                        <path
+                            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                            class="shape-fill"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="header-shape-2">
+                <div class="custom-shape-divider-bottom-1699974326-header-2">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                        preserveAspectRatio="none">
+                        <path
+                            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                            class="shape-fill"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="header-shape-3">
+                <div class="custom-shape-divider-bottom-1699974326-header-3">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                        preserveAspectRatio="none">
+                        <path
+                            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                            class="shape-fill"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+    </header>
 </body>
 
 </html>

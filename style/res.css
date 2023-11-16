@@ -36,11 +36,11 @@
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .rp {
         padding: 0;
     }
-}
+} */
 
 .school-educations-content {
     padding: 0 37px;
@@ -48,18 +48,17 @@
 }
 
 @media (max-width: 768px) {
-    .col-sharings {
-        flex: 0 0 auto;
-        width: 28%;
-    }
-
     .row-sharings {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .image-1, .image-2, .image-3, .image-4, .image-5 {
+    .image-1,
+    .image-2,
+    .image-3,
+    .image-4,
+    .image-5 {
         width: 100%;
     }
 
@@ -68,3 +67,104 @@
     }
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+
+    .navbar--school,
+    .navbar-school,
+    .navbar-menu,
+    .icon-search {
+        flex-basis: 100%;
+        /* Stacks the navbar items vertically on smaller screens */
+        text-align: center;
+    }
+
+    .school-info {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .navbar-school {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar--school {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        position: static;
+    }
+
+    .navbar-school-menu {
+        margin: auto;
+        display: block;
+    }
+
+    .header-intro {
+        opacity: 0.2;
+    }
+
+    .news {
+        margin-top: 200px;
+    }
+
+    .school-educations-image {
+        margin-top: 20px;
+        height: 250px;
+    }
+
+    .researches {
+        margin-top: 200px;
+    }
+
+    .research-shape {
+        height: 720px;
+    }
+
+    .researches-svg {
+        height: 80px !important;
+    }
+
+    .cooperates {
+        margin-top: 200px;
+    }
+    
+    .school-cooperates-detail {
+        transform: unset
+    }
+
+    .school-sharings-people {
+        margin: 50px;
+        height: 400px;
+    }
+
+    .col-sharings {
+        flex: 0 0 auto;
+        width: 35%;
+    }
+
+    .school-sharings-detail {
+        height: 350px;
+    }
+
+    .sharings-content {
+        margin-top: 40px !important;
+    }
+
+    .row-sharings {
+        justify-content: space-around;
+    }
+
+}
+
+/* Additional responsive adjustments as needed */
+/* @media (min-width: 576px) {
+
+    .container,
+    .container-sm {
+        max-width: unset;
+    }
+} */

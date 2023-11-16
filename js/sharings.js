@@ -17,12 +17,11 @@ $(document).ready(function () {
             dành cho Italy. Với anh, Italy là nơi 
             Nghĩa học tập để mở mang nhận 
             thức lẫn trái tim . Anh ấn tượng với 
-            các công trình kiến trúc, văn hóa.`,
+            các công trình kiến trúc.`,
         `Trước khi đi du học, Hoàng Anh là 
             niềm tự hào của gia đình khi luôn 
             đạt danh hiệu học sinh giỏi 12 
-            năm liên tiếp, ngoài ra, anh chàng 
-            còn từng là thành viên tích cực.`,
+            năm liên tiếp.`,
         'Chia sẻ về hành trình của Hiếu, trước đây chưa từng học ngoại ngữ. Nhưng từ học tiếng Ý, anh càng cảm thấy thích thú và hấp dẫn.',
         'Phong có một niềm đam mê đặc biệt dành cho Italy. Với anh, việc học tiếng Ý không chỉ giúp anh hiểu thêm về nước Ý và còn giúp cho anh mở mang nhiều kiến thức lý thú hơn.'
     ];
