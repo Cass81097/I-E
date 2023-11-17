@@ -15,6 +15,10 @@ body {
     margin-top: 100px;
 }
 
+.row {
+    margin-left : unset
+}
+
 .navbar--school {
     margin-top: 20px;
     display: flex;
@@ -83,32 +87,31 @@ h4 {
     width: 100%;
     left: -50px;
     width: 200px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.search-input.visible {
+    display: block;
+    opacity: 1;
 }
 
 .search-input input[type="text"] {
     width: 60%;
-    /* Adjust the width as per your design */
     padding: 5px 15px;
     font-size: 16px;
-    /* Adjust font size as needed */
     border: 1px solid #ccc;
-    /* Border color */
     border-radius: 25px;
-    /* Rounded corners */
     outline: none;
-    /* Removes the default focus outline */
     transition: all 0.3s ease;
-    /* Smooth transition for interactions */
 }
 
 .search-input input[type="text"]:focus {
     border-color: #00ff51;
-    /* Change border color on focus */
 }
 
 .search-input input[type="text"]::placeholder {
     color: #aaa;
-    /* Placeholder text color */
 }
 
 /* Responsive adjustments for smaller screens */
@@ -170,7 +173,8 @@ h4 {
     flex-direction: column;
     margin-right: 20px;
     margin-top: 40px;
-    border-radius: 0px 40px;
+    border-radius: 10px 40px;
+    overflow: hidden;
 }
 
 .school-info-2 {
@@ -183,7 +187,8 @@ h4 {
     align-items: center;
     flex-direction: column;
     margin-right: 20px;
-    border-radius: 0px 40px;
+    border-radius: 10px 40px;
+    overflow: hidden;
 }
 
 .school-info-icon {
@@ -426,6 +431,10 @@ h4 {
     font-size: 25px;
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 }
+
+/* .school-education-header {
+    margin-left: 35px;
+} */
 
 .school-education-info h1 {
     font-weight: bolder;
@@ -904,6 +913,7 @@ h4 {
     position: absolute;
     bottom: -40px;
     right: 10%;
+    z-index: 2;
 }
 
 .fa-point {

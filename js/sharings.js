@@ -51,9 +51,8 @@ $(document).ready(function () {
         let container = $('.row-sharings');
 
         for (let i = 0; i < initialSharingsTitles.length; i++) {
-            // Check if any of the details is empty
             if (!initialSharingsTitles[i] || !initialSharingsContents[i] || !initialSharingsImages[i] || !initialSharingsTimes[i]) {
-                continue; // Skip this iteration if any detail is empty
+                continue; 
             }
 
             let sharingPersonDiv = $('<div class="school-sharings-people rp col-md-4 col-sharings col-sm-12"></div>');

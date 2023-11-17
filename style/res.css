@@ -35,18 +35,6 @@
     margin-top: 30px;
 }
 
-/* Responsive adjustments */
-/* @media (max-width: 768px) {
-    .rp {
-        padding: 0;
-    }
-} */
-
-.school-educations-content {
-    padding: 0 37px;
-    /* Spacing for text content */
-}
-
 @media (max-width: 768px) {
     .row-sharings {
         display: flex;
@@ -126,6 +114,10 @@
         height: 250px;
     }
 
+    /* .school-education-header {
+        margin-left: 25px;
+    } */
+
     .researches {
         margin-top: 100px;
     }
@@ -142,6 +134,10 @@
         transform: unset
     }
 
+    .cooperates {
+        margin-top: 280px;
+    }
+
     .school-sharings-people {
         margin: 50px;
         height: 400px;
@@ -154,6 +150,10 @@
 
     .school-sharings-detail {
         height: 350px;
+    }
+
+    .school-sharings-page {
+        margin-top: 10px;
     }
 
     .sharings-content {
@@ -216,7 +216,7 @@
         padding: 20px;
     }
 
-    .school-info-1, 
+    .school-info-1,
     .school-info-2 {
         margin-right: unset;
     }
@@ -233,10 +233,12 @@
 
     footer {
         margin-top: 50px;
+        padding-bottom: 5rem !important;
+        padding-top: 1rem !important;
     }
 
     .footer-shape {
-        top: -655px;
+        top: -700px;
     }
 
     .footer-container {
@@ -249,6 +251,10 @@
 
     .footer-shape-3 {
         opacity: 1;
+    }
+
+    .row {
+        margin-left: calc(-.5 * var(--bs-gutter-x));
     }
 
     .row>* {
@@ -282,7 +288,8 @@ body {
 }
 
 @media (max-width: 576px) {
-.cooperates {
-    margin-top: 200px;
-}
+    .cooperates {
+        margin-top: 200px;
+
+    }
 }
