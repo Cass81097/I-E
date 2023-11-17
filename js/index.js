@@ -156,10 +156,10 @@ $(document).ready(function () {
 });
 
 // Handle Cooperate
-document.addEventListener('DOMContentLoaded', function () {
+$(document).ready(function () {
     // Xác định các biểu tượng mũi tên
-    let arrowLeft = document.querySelector('.fa-cooperates-left');
-    let arrowRight = document.querySelector('.fa-cooperates-right');
+    let arrowLeft = $('.fa-cooperates-left');
+    let arrowRight = $('.fa-cooperates-right');
 
     // Mảng các nội dung tin tức (ví dụ)
     let newsTitles = [
@@ -188,34 +188,20 @@ document.addEventListener('DOMContentLoaded', function () {
     let currentIndex = 0;
 
     function updateNewsContent(index) {
-        let newsTitleDiv = document.querySelector('.cooperates-title');
-        let newsContentDiv = document.querySelector('.cooperates-content');
-        let newsTimeDiv = document.querySelector('.cooperates-time');
-
-        setTimeout(function () {
-            newsContentDiv.innerHTML = newsContents[index];
-            newsTitleDiv.innerHTML = newsTitles[index];
-            newsTimeDiv.innerHTML = newsTime[index];
-        }, 300);
+        $('.cooperates-title').html(newsTitles[index]);
+        $('.cooperates-content').html(newsContents[index]);
+        $('.cooperates-time').html(newsTime[index]);
     }
 
     updateNewsContent(currentIndex);
 
-    arrowLeft.addEventListener('click', function () {
-        if (currentIndex > 0) {
-            currentIndex--;
-        } else {
-            currentIndex = newsContents.length - 1;
-        }
+    arrowLeft.on('click', function () {
+        currentIndex = currentIndex > 0 ? currentIndex - 1 : newsContents.length - 1;
         updateNewsContent(currentIndex);
     });
 
-    arrowRight.addEventListener('click', function () {
-        if (currentIndex < newsContents.length - 1) {
-            currentIndex++;
-        } else {
-            currentIndex = 0;
-        }
+    arrowRight.on('click', function () {
+        currentIndex = currentIndex < newsContents.length - 1 ? currentIndex + 1 : 0;
         updateNewsContent(currentIndex);
     });
 });
