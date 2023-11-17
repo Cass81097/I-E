@@ -62,35 +62,44 @@
             </div>
         </div>
 
-    
-            <div class="navbar--school">
-                <div class="navbar-school">
-                    <div class="navbar-icon">
-                        <img src="./assets/images/Logo.png" alt="">
-                    </div>
-                    <div class="navbar-info">
-                        <h4>KHOA TIẾNG ITALIA</h4>
-                        <p>Trường Đại học Hà Nội</p>
-                    </div>
+
+        <div class="navbar--school">
+            <div class="navbar-school">
+                <div class="navbar-icon">
+                    <img src="./assets/images/Logo.png" alt="">
                 </div>
-                <div class="navbar-school-menu">
-                    <p>GIỚI THIỆU</p>
-                    <p>TIN TỨC - SỰ KIỆN</p>
-                    <p>ĐÀO TẠO</p>
-                    <p>NGHIÊN CỨU KHOA HỌC</p>
-                    <p>HỢP TÁC</p>
-                    <p>CHIA SẺ - TRẢI NGHIỆM</p>
-                    <p>THƯ VIỆN ẢNH</p>
+                <div class="navbar-info">
+                    <h4>KHOA TIẾNG ITALIA</h4>
+                    <p>Trường Đại học Hà Nội</p>
                 </div>
-                <div class="icon-search" onclick="toggleSearch()">
-                    <i class="fas fa-search"></i>
-                    <div id="searchInput" class="search-input">
-                        <input type="text" placeholder="Search...">
-                    </div>
+
+                <div class="hamburger-menu">
+                    <i class="fas fa-bars"></i> <!-- Sử dụng Font Awesome hoặc một biểu tượng khác -->
                 </div>
             </div>
-    
-            
+
+
+            <div style="opacity: 0.3;" class="fade show menu-loading"></div>
+
+            <div class="navbar-school-menu">
+                <p>GIỚI THIỆU</p>
+                <p>TIN TỨC - SỰ KIỆN</p>
+                <p>ĐÀO TẠO</p>
+                <p>NGHIÊN CỨU KHOA HỌC</p>
+                <p>HỢP TÁC</p>
+                <p>CHIA SẺ - TRẢI NGHIỆM</p>
+                <p>THƯ VIỆN ẢNH</p>
+            </div>
+
+            <div class="icon-search" onclick="toggleSearch()">
+                <i class="fas fa-search"></i>
+                <div id="searchInput" class="search-input">
+                    <input type="text" placeholder="Tìm kiếm...">
+                </div>
+            </div>
+        </div>
+
+
         <div class="header-intro">
             <h1>Benvenuto Nel Dipartimento Italia!</h1>
             <p>L'"unico luogo di formazione della lingua italiana al Nord</p>
@@ -137,8 +146,8 @@
                 </div>
             </div>
         </div>
-        
-        
+
+
     </header>
 
     <div class="main-container container-fluid">
@@ -520,6 +529,7 @@
     <!-- <script src="./js/select.js"></script> -->
     <script src="./js/search.js"></script>
     <script src="./js/photos.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

@@ -116,6 +116,8 @@ h4 {
 
 .search-input input[type="text"]::placeholder {
     color: #aaa;
+    font-size: small;
+    text-align: center;
 }
 
 /* Responsive adjustments for smaller screens */

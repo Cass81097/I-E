@@ -32,3 +32,42 @@
 .icon-search {
     position: relative;
 }
+
+/* CSS cho responsive */
+@media (max-width: 768px) {
+
+    /* Hiển thị nút hamburger */
+    .hamburger-menu {
+        display: block !important;
+    }
+
+    /* Ẩn menu */
+    .navbar-school-menu {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: left;
+        margin-left: calc(100% - 165px);
+        background: white;
+        color: black;
+        padding-top: 10px;
+        border-radius: 10px;
+    }
+
+    .navbar-school-menu p {
+        font-size: 12px;
+        border-bottom: 1px solid #cfcccc;
+    }
+
+    .navbar-school-menu p:nth-child(1) {
+        margin-top: unset;
+    }
+
+}
+
+.hamburger-menu {
+    cursor: pointer;
+    color: white;
+    z-index: 9999;
+    display: none;
+}

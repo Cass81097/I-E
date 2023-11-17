@@ -51,7 +51,7 @@
     }
 
     .school-photos-image {
-        height: 150px;
+        height: 200px;
     }
 }
 
@@ -87,13 +87,8 @@
         position: static;
     }
 
-    .navbar-school-menu {
-        margin: auto;
-        display: block;
-    }
-
     .header-intro {
-        opacity: 0.1;
+        margin-top: 50px;
     }
 
     .school-news-image {
@@ -233,6 +228,7 @@
     .navbar-school {
         display: flex;
         align-items: center;
+        justify-content: space-around;
     }
 
     footer {
