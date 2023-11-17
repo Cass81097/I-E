@@ -63,6 +63,10 @@
         margin-top: unset;
     }
 
+    .icon-search {
+        margin-top: 10px;
+    }
+
 }
 
 .hamburger-menu {

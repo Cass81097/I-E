@@ -1,6 +1,7 @@
 $(document).ready(function () {
     $('.hamburger-menu').on('click', function () {
         $('.navbar-school-menu').toggle(); 
+        $('.icon-search').toggle(); 
 
         // Kiểm tra nếu menu đang hiển thị
         if ($('.navbar-school-menu').is(':visible')) {
