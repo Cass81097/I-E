@@ -190,6 +190,10 @@
         height: 100%;
     }
 
+    .school-cooperates-page {
+        margin-top: 20px;
+    }
+
     .school-sharings {
         margin-top: 30px;
     }
@@ -290,6 +294,14 @@ body {
 @media (max-width: 576px) {
     .cooperates {
         margin-top: 200px;
+    }
 
+    .school-cooperates-page {
+        margin-top: 100px;
+    }
+
+    footer {
+        padding-bottom: 1rem !important;
+        padding-top: 1rem !important;
     }
 }
