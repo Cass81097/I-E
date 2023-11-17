@@ -304,4 +304,15 @@ body {
         padding-bottom: 1rem !important;
         padding-top: 1rem !important;
     }
+
+    .footer-menu {
+        transform: translateY(-15px);
+        z-index: 2;
+        position: relative;
+    }
+
+    .footer-about {
+        transform: translateY(-45px);
+        position: relative;
+    }
 }
