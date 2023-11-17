@@ -64,7 +64,14 @@ h4 {
 .navbar-school-menu {
     display: flex;
     z-index: 9999;
-    color: #fff ;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.navbar-school-menu.visible {
+    display: block;
+    opacity: 1;
 }
 
 .navbar-school-menu p {
