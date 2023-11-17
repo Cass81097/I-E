@@ -77,11 +77,12 @@ h4 {
 
 .search-input {
     display: block;
-    position: fixed;
+    position: absolute;
     width: 200px;
     z-index: 1000;
-    top: 50px;
-    right: -3.5%;
+    width: 100%;
+    left: -50px;
+    width: 200px;
 }
 
 .search-input input[type="text"] {
@@ -254,7 +255,7 @@ h4 {
 
 .school-new {
     width: 100%;
-    padding: 0px 40px 70px 40px;
+    /* padding: 0px 40px 70px 40px; */
     position: relative;
 }
 

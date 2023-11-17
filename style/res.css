@@ -108,6 +108,19 @@
         opacity: 0.2;
     }
 
+    .school-news-image {
+        height: 200px;
+    }
+
+    .school-new-header {
+        display: block;
+    }
+
+    .school-point {
+        width: 100%;
+        text-align: center;
+    }
+
     .school-educations-image {
         margin-top: 20px;
         height: 250px;
@@ -126,7 +139,7 @@
     }
 
     .cooperates {
-        margin-top: 100px;
+        margin-top: 200px;
     }
 
     .school-cooperates-detail {
@@ -153,6 +166,10 @@
 
     .row-sharings {
         justify-content: space-around;
+    }
+
+    .school-photo-point-1 {
+        display: none;
     }
 
     .school-photo-point-2 {
@@ -202,10 +219,9 @@
         height: auto;
     }
 
-    .navbar-school,
-    .navbar-menu,
-    .icon-search {
-        flex: 1 1 auto;
+    .search-input {
+        width: 100%;
+        left: unset;
     }
 
     .navbar-school {
