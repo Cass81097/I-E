@@ -83,6 +83,7 @@
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
+        margin-top: 100px;
     }
 
     .navbar-school {
@@ -107,17 +108,13 @@
         opacity: 0.2;
     }
 
-    .news {
-        margin-top: 200px;
-    }
-
     .school-educations-image {
         margin-top: 20px;
         height: 250px;
     }
 
     .researches {
-        margin-top: 200px;
+        margin-top: 100px;
     }
 
     .research-shape {
@@ -129,9 +126,9 @@
     }
 
     .cooperates {
-        margin-top: 200px;
+        margin-top: 100px;
     }
-    
+
     .school-cooperates-detail {
         transform: unset
     }
@@ -139,11 +136,11 @@
     .school-sharings-people {
         margin: 50px;
         height: 400px;
+        width: 100%;
     }
 
     .col-sharings {
         flex: 0 0 auto;
-        width: 35%;
     }
 
     .school-sharings-detail {
@@ -158,13 +155,105 @@
         justify-content: space-around;
     }
 
+    .school-photo-point-2 {
+        position: static;
+    }
+
+    .row {
+        width: 100%;
+    }
+
+    .school-researches-detail {
+        width: fit-content;
+    }
+
+    .school-researches-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .school-cooperates-image-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .school-sharings {
+        margin-top: 30px;
+    }
 }
 
-/* Additional responsive adjustments as needed */
-/* @media (min-width: 576px) {
+@media (max-width: 768px) {
 
-    .container,
-    .container-sm {
-        max-width: unset;
+    .navbar--school,
+    .navbar-school,
+    .navbar-menu,
+    .icon-search {
+        flex-basis: 100%;
+        /* Stacks the navbar items vertically on smaller screens */
+        text-align: center;
     }
-} */
+
+    .school-info>div {
+        flex-basis: 100%;
+        /* Full width for each info block on smaller screens */
+    }
+
+    .school-info {
+        height: auto;
+    }
+
+    .navbar-school,
+    .navbar-menu,
+    .icon-search {
+        flex: 1 1 auto;
+    }
+
+    .navbar-school {
+        display: flex;
+        align-items: center;
+    }
+
+    footer {
+        margin-top: 50px;
+    }
+
+    .footer-shape {
+        top: -655px;
+    }
+
+    .footer-container {
+        margin-top: 80px;
+    }
+
+    .footer-menu-list {
+        display: block;
+    }
+
+    .footer-shape-3 {
+        opacity: 1;
+    }
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container {
+    /* Styles for your main content */
+    flex-grow: 1;
+    /* Allows the container to take up remaining space */
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container {
+    /* Styles for your main content */
+    flex-grow: 1;
+    /* Allows the container to take up remaining space */
+}
