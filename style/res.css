@@ -315,4 +315,8 @@ body {
         transform: translateY(-45px);
         position: relative;
     }
+
+    .school-photo-point-2 {
+        display: none;
+    }
 }
